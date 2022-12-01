@@ -2,7 +2,8 @@
 
 ### 我们经常级联合选择器多选的需求，但是element UI提供的级联选择器并不能只多选最后一级，所以我考虑基于element UI的级联选择器优化一下，实现可以多选最后一级，并且尽量可以保留级联选择器原有功能。
 
-##DEMO地址：
+## DEMO地址：
+
 https://heyu3913.github.io/el-cascader-onlylast-mutiple/dist/index.html
 
 ## 使用方法：
