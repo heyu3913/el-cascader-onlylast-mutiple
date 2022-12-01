@@ -5,6 +5,11 @@
 ## 使用方法：
 
 ```javascript
+  下载依赖
+  npm i el-cascader-onlylast-mutiple -S
+  引入依赖
+  import Cascader from  'el-cascader-onlylast-mutiple'
+  使用依赖 具体可看本项目中App.vue
    <Cascader></Cascader>
 ```
 
