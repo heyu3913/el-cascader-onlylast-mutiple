@@ -11,7 +11,7 @@ module.exports = {
   assetsDir: "",
 
   // 是否在开发环境下通过 eslint-loader 在每次保存时 lint 代码
-  lintOnSave: true,
+  lintOnSave: false,
 
   //是否使用包含运行时编译器的 Vue 构建版本
   runtimeCompiler: false,

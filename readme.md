@@ -29,6 +29,7 @@ https://heyu3913.github.io/el-cascader-onlylast-mutiple/dist/index.html
 | clearable | 是否支持清空选项     | boolean | - | false |
 | collapseTags | 多选模式下是否折叠Tag     | boolean | - | false |
 | popperClass | 自定义浮层类名     | string | - | - |
+| showAllLeveles | 输入框中是否显示选中值的完整路径	     | boolean | - | false |
 | props | 配置选项，具体见下表     | object | - | - |
 
 #### props配置选项

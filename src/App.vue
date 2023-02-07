@@ -4,6 +4,7 @@
     :props="props"
     :options="options"
     :collapseTags = true
+    :showAllLeveles = "ShowAllLeveles"
     :visibleData="visibleData"
     @change="change"
     ></Cascader>
@@ -15,7 +16,6 @@
 
 <script>
 import Cascader from  'el-cascader-onlylast-mutiple'
-// import  Cascader  from './lib/ElCascaderOnlaylastMutiple/lib/el-cascader-onlylast-mutiple';
 export default {
   name: 'App',
   data(){
@@ -107,8 +107,10 @@ export default {
               }
             ]
           }]
-        }],
-      visibleData:[]
+        }
+        ],
+      visibleData:[],
+      ShowAllLeveles:true
     }
   },
   components: {
