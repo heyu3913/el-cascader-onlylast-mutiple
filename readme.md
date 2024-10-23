@@ -6,6 +6,10 @@
 
 https://heyu3913.github.io/el-cascader-onlylast-mutiple/dist/index.html
 
+## 项目地址
+
+https://github.com/heyu3913/el-cascader-onlylast-mutiple
+
 ## 使用方法：
 
 ```javascript
@@ -28,8 +32,8 @@ https://heyu3913.github.io/el-cascader-onlylast-mutiple/dist/index.html
 | disabled | 是否禁用 | boolean | - | false |
 | clearable | 是否支持清空选项     | boolean | - | false |
 | collapseTags | 多选模式下是否折叠Tag     | boolean | - | false |
+| showAllLeveles | 是否仅在输入框显示最后一级     | boolean | - | false |
 | popperClass | 自定义浮层类名     | string | - | - |
-| showAllLeveles | 输入框中是否显示选中值的完整路径	     | boolean | - | false |
 | props | 配置选项，具体见下表     | object | - | - |
 
 #### props配置选项
@@ -44,9 +48,10 @@ https://heyu3913.github.io/el-cascader-onlylast-mutiple/dist/index.html
 
 #### 事件：
 
-| 事件名称    | 说明 | 回调参数 | 
-| ------ | ------ | ------ | 
-| change    | 当选中节点变化时触发    | 选中节点的值| 
+| 事件名称    | 说明         | 回调参数   | 使用方式                                              |
+|---------|------------|--------|---------------------------------------------------| 
+| change  | 当选中节点变化时触发 | 选中节点的值 |
+| getCheckedNodes | 获取选中的节点	   | 节点的信息  | 组件配置ref;然后this.$refs.你配置的ref.getCheckedNodes() 触发 |
 
 ### tips:
 

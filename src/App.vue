@@ -1,5 +1,7 @@
 <template>
+
   <div id="app">
+    <button @click="test">测试</button>
     <Cascader
     :props="props"
     :options="options"
@@ -7,6 +9,7 @@
     :showAllLeveles = "ShowAllLeveles"
     :visibleData="visibleData"
     @change="change"
+    ref="parent"
     ></Cascader>
     <h2>
       visibleData: {{visibleData}}
@@ -15,12 +18,16 @@
 </template>
 
 <script>
-import Cascader from  'el-cascader-onlylast-mutiple'
+// import Cascader from  'el-cascader-onlylast-mutiple'
+import Cascader from  './../../npm/el-cascader-onlylast-mutiple/lib/el-cascader-onlylast-mutiple.vue'
 export default {
   name: 'App',
   data(){
     return {
-      props: { multiple: true },
+      props: {
+        multiple: true ,
+        ref: 'father'
+      },
       options: [
         {
           value: 1,
@@ -120,6 +127,9 @@ export default {
     change(data){
       console.log(data)
       this.visibleData = data
+    },
+    test(){
+      console.log(this.$refs.parent.getCheckedNodes());
     }
   }
 }
